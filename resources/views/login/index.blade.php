@@ -41,9 +41,9 @@
             <div class="container">
                 <div class="login-wrap">
                     <div class="login-content">
-                        <div class="login-logo">
+                        <div class="login-logo mx-auto">
                             <a href="#">
-                                <img src="/images/icon/logo.png" alt="CoolAdmin">
+                                <img src="https://supmanagement.ml/wp-content/uploads/2021/06/logosup.png" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">

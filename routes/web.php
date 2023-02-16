@@ -15,7 +15,11 @@ use App\Http\Controllers\DashboardController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::get('/', [LoginController::class, 'index'])->name('login')->middleware('AlreadyLoggedIn');
 Route::post('/check', [LoginController::class, 'check'])->name('check');
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::middleware(['check', 'AlreadyLoggedIn'])->group(function () {
+   
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+});

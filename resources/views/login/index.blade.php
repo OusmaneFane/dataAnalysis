@@ -43,7 +43,7 @@
                     <div class="login-content">
                         <div class="login-logo mx-auto">
                             <a href="#">
-                                <img src="https://supmanagement.ml/wp-content/uploads/2021/06/logosup.png" alt="CoolAdmin">
+                                <img src="https://supmanagement.ml/wp-content/uploads/2021/06/logosup.png" alt="Sup_image">
                             </a>
                         </div>
                         <div class="login-form">
@@ -53,7 +53,7 @@
                                     {{ Session::get('success') }}
                                 </div>
                                 @endif
-                        
+
                                 @if(Session::get('fail'))
                                 <div class="alert alert-danger">
                                     {{ Session::get('fail') }}
@@ -70,11 +70,11 @@
                                     <label>Password</label>
                                     <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
                                 </div>
-                               
+
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
-                                
+
                             </form>
-                            
+
                         </div>
                     </div>
                 </div>
